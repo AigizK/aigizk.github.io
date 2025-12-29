@@ -383,6 +383,8 @@ pre.template {
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--text-body);
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .copy-row {
