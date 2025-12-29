@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <title>Homai — Айгиз Кунафин</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Homai: real-time голосовой AI агент. Wake word, ASR/TTS, LLM агент с действиями, RAG по данным пользователя.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Айгиз Кунафин", "sameAs": ["https://www.linkedin.com/in/aigizk/"]}</script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav>
+        <span class="brand"><a href="index.html">Главная</a><a href="homai.html">Homai</a></span>
+        <a href="en/homai.html" class="lang">EN</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="status"><span class="dot"></span>Reference implementation</div>
+
+      <h1>Homai</h1>
+      <p class="small">Роль: фаундер проекта.</p>
+      <p class="intro"><strong>Умная колонка на башкирском языке.</strong><br>Real‑time voice‑агент: wake word на устройстве → ASR/TTS воркеры → LLM‑агент с действиями и RAG по данным пользователя.</p>
+
+      <p class="small"><strong>Я фаундер Homai.</strong></p>
+
+      <div class="buttons">
+        <a class="cta" href="https://t.me/AigizK">Обсудить похожую задачу</a>
+        <a class="cta secondary" href="mailto:aigizk@gmail.com">Email</a>
+      </div>
+
+      <h2>Что важно в этом проекте</h2>
+      <ul class="small-list">
+        <li><strong>Real‑time</strong>: голосовой UX требует предсказуемой задержки и стабильного поведения.</li>
+        <li><strong>Агентность</strong>: ассистент умеет выполнять задачи через инструменты/сценарии.</li>
+        <li><strong>RAG</strong>: ответы на основе данных пользователя, а не только “общих знаний”.</li>
+        <li><strong>Продакшн‑инженерия</strong>: компоненты разделены (воркеры), чтобы управлять latency и масштабированием.</li>
+      </ul>
+
+      <h2>Архитектура (крупными блоками)</h2>
+      <ul class="small-list">
+        <li><strong>On‑device (C++)</strong>: wake word и базовая логика.</li>
+        <li><strong>Backend (Go)</strong>: оркестрация запросов, состояние, очереди/воркеры.</li>
+        <li><strong>Workers</strong>: ASR / TTS / LLM как отдельные сервисы.</li>
+        <li><strong>LLM‑agent</strong>: ответы + действия (рутины, автоматизация).</li>
+        <li><strong>RAG</strong>: retrieval по данным пользователя.</li>
+      </ul>
+
+      <h2>Ссылки</h2>
+      <ul class="small-list">
+        <li>Сайт проекта: <a href="https://homai.ru/">homai.ru</a></li>
+        <li>Homai Tech: <a href="https://homai.tech/">homai.tech</a></li>
+        <li>AI for Good: <a href="https://aiforgood.itu.int/speaker/homai/">aiforgood.itu.int</a></li>
+      </ul>
+
+      
+      <h2>Сборка и контроль качества</h2>
+      <p>Мы собираем устройства сами. Сборщик SMD‑компонент работает на ПО, написанном нами: в процессе используются ML‑модели и vision LLM, чтобы повысить качество сборки и снизить процент ошибок.</p>
+
+      <h2>Медиа</h2>
+      <div class="media">
+        <img src="assets/homai-placeholder.png" alt="Homai">
+        <!-- <p class="small">Homai</p>-->
+        <!-- Example:
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        -->
+      </div>
+
+      <div class="final-cta">
+        <h2>Хотите сделать похожий voice‑agent?</h2>
+        <p>Напишите 3–5 строк контекста — предложу следующий шаг.</p>
+        <div class="buttons">
+          <a class="cta" href="https://t.me/AigizK">Написать в Telegram</a>
+          <a class="cta secondary" href="mailto:aigizk@gmail.com">Email</a>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <span>© 2025 Айгиз Кунафин</span>
+      <a href="https://www.linkedin.com/in/aigizk/">LinkedIn</a>
+    </footer>
+  </div>
+
+</body>
+</html>

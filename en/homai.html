@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Homai — Aigiz Kunafin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Homai: a real-time voice agent. Wake word, ASR/TTS, an LLM agent with actions, RAG over user data.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Aigiz Kunafin", "sameAs": ["https://www.linkedin.com/in/aigizk/"]}</script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav>
+        <span class="brand"><a href="index.html">Home</a><a href="homai.html">Homai</a></span>
+        <a href="../homai.html" class="lang">RU</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="status"><span class="dot"></span>Reference implementation</div>
+
+      <h1>Homai</h1>
+      <p class="intro"><strong>A Bashkir-speaking smart speaker.</strong><br>A real-time voice agent: on-device wake word → ASR/TTS workers → an LLM agent with actions and RAG over user data.</p>
+
+      <p class="small"><strong>I’m the founder of Homai.</strong></p>
+
+      <div class="buttons">
+        <a class="cta" href="https://t.me/AigizK">Discuss a similar problem</a>
+        <a class="cta secondary" href="mailto:aigizk@gmail.com">Email</a>
+      </div>
+
+      <h2>What matters here</h2>
+      <ul class="small-list">
+        <li><strong>Real-time</strong>: voice UX needs predictable latency and stable behavior.</li>
+        <li><strong>Agentic actions</strong>: the assistant can execute tasks via tools/workflows.</li>
+        <li><strong>RAG</strong>: answers grounded in user-specific data.</li>
+        <li><strong>Production engineering</strong>: separate workers/services to control latency and scaling.</li>
+      </ul>
+
+      <h2>Architecture (high-level)</h2>
+      <ul class="small-list">
+        <li><strong>On-device (C++)</strong>: wake word and core logic.</li>
+        <li><strong>Backend (Go)</strong>: orchestration, state, queues/workers.</li>
+        <li><strong>Workers</strong>: ASR / TTS / LLM as independent services.</li>
+        <li><strong>LLM agent</strong>: answers + actions (routines, automation).</li>
+        <li><strong>RAG</strong>: retrieval over user data.</li>
+      </ul>
+
+      <h2>Links</h2>
+      <ul class="small-list">
+        <li>Project site: <a href="https://homai.ru/">homai.ru</a></li>
+        <li>Homai Tech: <a href="https://homai.tech/">homai.tech</a></li>
+        <li>AI for Good: <a href="https://aiforgood.itu.int/speaker/homai/">aiforgood.itu.int</a></li>
+      </ul>
+
+      
+      <h2>Manufacturing & quality control</h2>
+      <p>We manufacture devices in-house. Our SMD assembly machine runs software we wrote; the pipeline uses ML models and a vision LLM to improve assembly quality and reduce errors.</p>
+
+      <h2>Media</h2>
+      <div class="media">
+        <img src="assets/homai-placeholder.png" alt="Homai">
+        <!-- <p class="small">Homai</p>-->
+        <!-- Example:
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        -->
+      </div>
+
+      <div class="final-cta">
+        <h2>Want to build a similar voice agent?</h2>
+        <p>Send 3–5 lines of context and I’ll suggest the next step.</p>
+        <div class="buttons">
+          <a class="cta" href="https://t.me/AigizK">Message on Telegram</a>
+          <a class="cta secondary" href="mailto:aigizk@gmail.com">Email</a>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <span>© 2025 Aigiz Kunafin</span>
+      <a href="https://www.linkedin.com/in/aigizk/">LinkedIn</a>
+    </footer>
+  </div>
+
+</body>
+</html>
